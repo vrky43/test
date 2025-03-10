@@ -1,26 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Jednoduchá stránka</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', monospace;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .content {
+            flex: 1;
             padding: 20px;
-            background-color: #f4f4f4;
+            text-align: center;
         }
-        h1 {
-            color: #333;
+        .footer {
+            width: 100%;
         }
-        p {
-            color: #666;
+        .footer img {
+            width: 100%;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Simple Page</h1>
-    <p>This is a basic HTML page with some text. You can edit this content and add more as needed.</p>
+    <div class="header">
+        <div class="nav">
+            <a href="#">Domů</a>
+            <a href="#">O nás</a>
+            <a href="#">Jak a kudy</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Vítejte!</h1>
+        <p>Toto je jednoduchá stránka s několika záložkami.</p>
+    </div>
+    <div class="footer">
+        <img src="medvedi.png" alt="Spodní obrázek">
+    </div>
 </body>
 </html>
