@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: 'Special Elite', cursive;
     line-height: 1.8; /* Zvětší mezeru mezi řádky */
-    background-color: beige;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     min-height: 100vh;

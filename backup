@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Svatba na Medvědí boudě</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .red-link {
+            color: red;
+            font-size: 32px;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: rgb(245, 230, 23);
+            padding: 10px;
+            /*border: 3px solid black;*/
+            display: inline-block;
+            text-align: center;
+        }
+        .red-link:hover {
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="index.html">Domů</a>
+            <a href="onas.html">O nás</a>
+            <a href="program.html">Program</a>
+            <a href="dary.html">Svatební dary</a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Vítejte!</h1>
+        <p>Tady se dozvíte všechno co by se vám mohlo hodit až za námi pojedete.</p>
+        <h2>Dotazník</h2>
+        <p>Ze všeho nejdřív nám ale vyplň dotazník ať máme dost postelí a jídla.</p>
+        <p><a href="dotaznik.html" class="red-link">DOTAZNÍK</a></p>
+
+        <h1>Informace k dopravě a ubytování</h1>
+        <h2>Místo svatby</h2>
+        <p>Svatba se bude konat na Medvědí boudě v Krkonoších.</p>
+        <p><a href="https://maps.app.goo.gl/cvdLbjhiF1ykzwKM7" target="_blank">Odkaz na Google mapy</a></p>
+
+        <!-- Interaktivní mapa -->
+        <iframe 
+            style="border:none" 
+            src="https://en.frame.mapy.cz/s/focedohugu" 
+            width="500" 
+            height="333" 
+            frameborder="0">
+        </iframe>
+
+        <h2>Parkování</h2>
+        <p>Na Medvědích boudách jsou parkovací místa velmi omezená, proto prosím zaparkujte 
+            na vyhrazeném parkovišti na Medvědím kolenu. Odtud je to procházkou na Medvědí boudu 2 kilometry. 
+            V sobotu od 8:00 do 11:00 bude zajištěn svoz hostů a zavazadel na Medvědí boudu. (Pokud z jakéhokoliv důvodu potřebujete povolit vjezd
+            , nezapomeňte to zmínit v dotazníku)</p>
+
+
+        <iframe style="border:none" src="https://en.frame.mapy.cz/s/dafuvutamo" width="500" height="333" frameborder="0"></iframe>
+        <iframe style="border:none" src="https://en.frame.mapy.cz/s/pacugeraju" width="500" height="333" frameborder="0"></iframe>
+
+
+        <h2>Ubytování</h2>
+        <p>Medvědí bouda nabízí ubytování spíše pro méně náročné hosty v útulných, avšak nikoliv přepychových pokojích. Pokoje jsou 
+            převážně bez vlastní koupelny, mají pouze koutek s umyvadlem, zrcadlem a skříňkou. V šesti pokojích bylo již zřízeno vlastní 
+            sociální zařízení, pro ostatní pokoje se nalézají sprchy 
+            i záchody na podlažích. Všechna sociální zařízení a pokoje jsou nově zrekonstruované. Bouda poskytuje přístřeší až pro 145 hostů.</p>
+    </div>
+    <div class="footer">
+        <img src="medvedi.png" alt="Spodní obrázek">
+    </div>
+</body>
+</html>
