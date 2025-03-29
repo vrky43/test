@@ -4,49 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <title>Svatební dary - Svatba na Medvědí boudě</title>
+    <title>Program - Svatba na Medvědí boudě</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="nav">
+    <header class="main-header">
+        <div class="logo">
+            <h1>J&T</h1>
+        </div>
+        <nav class="main-nav">
             <a href="index.html">Hlavní stránka</a>
             <a href="doprava.html">Doprava a ubytování</a>
             <a href="program.html">Program</a>
             <a href="dary.html">Svatební dary</a>
             <a href="onas.html">O nás</a>
-        </div>
-    </div>
-    <div class="content">
-        <h1>Program</h1>
-        <div class="schedule">
-            <div class="day">
-                <h2>Pátek</h2>
-                <p>10:00 - Náš příjezd na Medvědí boudu</p>
-                <p>10:00 - 22:00 - Přípravy na sobotu</p>
-                <p>18:00 - Buřtguláš na ohni a testování plnosti pivních sudů</p>
-            </div>
-            
-            <div class="day">
-                <h2>Sobota</h2>
-                <p>8:00 - Snídaně</p>
-                <p>8:00 - 11:00 - Příjezd hostů co nepřijeli v pátek</p>
-                <p>11:30 - Obřad</p>
-                <p>12:30 - Oběd v bunkru</p>
-                <p>14:00 - XX:XX - Volná zábava</p>
-            </div>
-    
-            <div class="day">
-                <h2>Neděle</h2>
-                <p>09:00 - Snídaně</p>
-                <p>10:00 - Balení a odjezd</p>
-            </div>
-        </div>
+        </nav>
+    </header>
 
-    </div>
-    
-    <div class="footer">
-        <img src="medvedi.png" alt="Spodní obrázek">
-    </div>
+    <main class="grid-container">
+        <section class="welcome-section">
+            <h2>Program</h2>
+            <div class="schedule-container">
+                <div class="schedule">
+                    <div class="day">
+                        <h3>Pátek</h3>
+                        <div class="timeline">
+                            <p><span class="time">10:00</span> - Náš příjezd na Medvědí boudu</p>
+                            <p><span class="time">10:00 - 22:00</span> - Přípravy na sobotu</p>
+                            <p><span class="time">18:00</span> - Buřtguláš na ohni a testování pivních sudů</p>
+                        </div>
+                    </div>
+                    
+                    <div class="day">
+                        <h3>Sobota</h3>
+                        <div class="timeline">
+                            <p><span class="time">8:00</span> - Snídaně</p>
+                            <p><span class="time">8:00 - 11:00</span> - Příjezd hostů co nepřijeli v pátek</p>
+                            <p><span class="time">11:30</span> - Obřad</p>
+                            <p><span class="time">12:30</span> - Oběd</p>
+                            <p><span class="time">14:00 - XX:XX</span> - Volná zábava + pohoštění</p>
+                        </div>
+                    </div>
+            
+                    <div class="day">
+                        <h3>Neděle</h3>
+                        <div class="timeline">
+                            <p><span class="time">09:00</span> - Snídaně</p>
+                            <p><span class="time">10:00</span> - Balení a odjezd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <img src="medvedi.png" alt="Spodní obrázek" class="footer-image">
+    </footer>
 </body>
 </html>

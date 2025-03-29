@@ -6,48 +6,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <title>Svatba na Medvědí boudě</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .red-link {
-            color: red;
-            font-size: 32px;
-            font-weight: bold;
-            text-decoration: none;
-            background-color: rgb(245, 230, 23);
-            padding: 10px;
-            /*border: 3px solid black;*/
-            display: inline-block;
-            text-align: center;
-        }
-        .red-link:hover {
-            background-color: red;
-            color: black;
-        }
-    </style>
 </head>
 <body>
-    <div class="header">
-        <div class="nav">
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-text">P&H</span>
+        </div>
+        <nav class="main-nav">
             <a href="index.html">Hlavní stránka</a>
             <a href="doprava.html">Doprava a ubytování</a>
             <a href="program.html">Program</a>
             <a href="dary.html">Svatební dary</a>
             <a href="onas.html">O nás</a>
-        </div>
-    </div>
-    <div class="content">
-        <h1>Vítejte!</h1>
-        <p>Milá rodino a přátelé, vítáme vás na našich svatebních stránkách!
-        Zde najdete všechny důležité informace o naší svatbě.</p>
-        <p>Náš svatební obřad se uskuteční <strong>13. ZÁŘÍ v 11:30</strong> v Krkonoších na <strong>MEDVĚDÍ BOUDĚ</strong>, ale rádi bychom s vámi strávili více času. 
-        Proto je možné přijet na svatební místo již v pátek a projít se po okolí, nebo si jen užít pohodový večer s námi. Odjezd je plánovaný na neděli, 
-        ale samozřejmě je jen na vás, kdy dorazíte a jak dlouho s námi zůstanete.</p>
-        <p>Doufáme, že s námi prožijete nezapomenutelný víkend plný lásky a krásné horské atmosféry.</p>
-        <p>Prozkoumejte webovky a zjistěte podrobnosti o místě konání, programu a dalších důležitých informacích.</p>
-        <p>Abyste zajistili dost postelí a jídla, prosíme o vyplnění dotazníku co nejdříve, nejpozději však do 30. června 2025.</p>
-        <p><a href="https://forms.gle/bQaUgAnCqHXQMoT96" class="highlight">DOTAZNÍK</a></p>
-    </div>
-    <div class="footer">
-        <img src="medvedi.png" alt="Spodní obrázek">
-    </div>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <section class="welcome-section">
+            <h2>Svatba na Medvědí boudě</h2>
+            <p class="intro-text">Milá rodino a přátelé, vítáme vás na našich svatebních stránkách!</p>
+            <div class="date-highlight">
+                <p>13. ZÁŘÍ 2025 • 11:30</p>
+                <p>MEDVĚDÍ BOUDA • KRKONOŠE</p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <p>Proto je možné přijet na svatební místo již v pátek a projít se po okolí, nebo si jen užít pohodový večer s námi. Odjezd je plánovaný na neděli, ale samozřejmě je jen na vás, kdy dorazíte a jak dlouho s námi zůstanete.</p>
+            
+            <div class="cta-section">
+                <p>Prosíme o vyplnění dotazníku do 30. června 2025</p>
+                <a href="https://forms.gle/bQaUgAnCqHXQMoT96" class="cta-button" target="_blank" rel="noopener noreferrer">Vyplnit dotazník</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <img src="medvedi.png" alt="Spodní obrázek" class="footer-image">
+    </footer>
 </body>
 </html>

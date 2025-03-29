@@ -1,88 +1,167 @@
-/* Základní nastavení stránky */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Special Elite', cursive;
-    line-height: 1.8; /* Zvětší mezeru mezi řádky */
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+:root {
+    --primary-color: #4a4a4a;
+    --accent-color: #2c5530;  /* Changed to forest green */
+    --background-color: #f5f5f5;
+    --text-color: #333333;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Hlavička a navigace */
-.header {
-    background-color: #333;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+body {
+    font-family: 'Special Elite', cursive;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: var(--background-color);
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
-
-
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: rgba(10, 47, 13, 0.1);
-    padding: 1px 0;
-    flex-wrap: wrap;
+.logo h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--accent-color);
 }
 
-.nav a {
-    color: white;
+/* Remove or comment out the previous .logo img style */
+/* .logo img {
+    max-height: 60px;
+    width: auto;
+} */
+
+.main-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
     text-decoration: none;
-    font-size: 22px;
-    padding: 5px 5px;
-    border-radius: 1px;
-    transition: background-color 0.3s ease-in-out, transform 0.1s;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
-.nav a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: scale(1.1);
+.main-nav a:hover {
+    color: var(--accent-color);
 }
 
+/* Main Content Styles */
+.grid-container {
+    margin-top: 120px;
+    padding: 0 5%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* Obsah stránky */
-.content {
-    flex: 1;
-    padding: 20px;
+.welcome-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.welcome-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.date-highlight {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.date-highlight p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    letter-spacing: 2px;
+}
+
+.info-section {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
-/* Spodní obrázek přes celou šířku stránky */
-.footer {
-    width: 100%;
+.cta-section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
 }
 
-.footer img {
-    width: 100%;
-    display: block;
-}
-/* program */
-.schedule {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    text-align: left;
-}
-
-.day {
-    width: 30%;
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    background-color: var(--accent-color);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
-h2 {
+.cta-button:hover {
+    background-color: #1a3b1d;  /* Darker shade of the accent color for hover state */
+}
+
+/* Footer Styles */
+.main-footer {
+    margin-top: 4rem;
+    padding: 2rem 5%;
     text-align: center;
-    font-size: 20px;
 }
 
-p {
-    margin: 5px 0;
-    font-size: 16px;
+.footer-image {
+    max-width: 100%;
+    height: auto;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .main-nav {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid-container {
+        margin-top: 160px;
+    }
+
+    .welcome-section h2 {
+        font-size: 2rem;
+    }
+
+    .date-highlight p {
+        font-size: 1.2rem;
+    }
+}
