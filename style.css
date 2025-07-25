@@ -384,8 +384,11 @@ body {
 
 .flag-icon {
     width: 24px;
-    height: auto;
+    height: 16px; /* Add explicit height instead of auto */
     border: 1px solid #ddd;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    display: block; /* Prevents any unexpected spacing */
 }
 
 /* Adjust for mobile */
