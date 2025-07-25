@@ -357,3 +357,41 @@ body {
         z-index: 1;
     }
 }
+
+/* Add this to your style.css file */
+
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.language-switcher a {
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.language-switcher a.active {
+    opacity: 1;
+}
+
+.language-switcher a:hover {
+    opacity: 1;
+}
+
+.flag-icon {
+    width: 24px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+/* Adjust for mobile */
+@media (max-width: 768px) {
+    .language-switcher {
+        top: 1rem;
+        right: 4rem; /* Move to the left of hamburger menu */
+    }
+}
