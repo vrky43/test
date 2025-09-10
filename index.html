@@ -6,6 +6,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <title>Svatba na Medvědí boudě</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .important-notice {
+            color: red;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid red;
+            border-radius: 5px;
+            background-color: rgba(255, 0, 0, 0.05);
+        }
+        
+        .disclaimer-box {
+            margin: 15px 0;
+            padding: 12px;
+            border: 1px solid #d32f2f;
+            border-radius: 5px;
+            background-color: rgba(211, 47, 47, 0.05);
+        }
+        
+        .disclaimer-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #d32f2f;
+        }
+    </style>
 </head>
 <body>
     <header class="main-header">
@@ -29,6 +54,21 @@
 
     <main class="grid-container">
         <section class="welcome-section">
+            <div class="disclaimer-box">
+                <div class="disclaimer-title">POČASÍ</div>
+                <p>Bude zima cca kolem 12 stupňů a může pršet. Vezměte si s sebou teplé oblečení a pláštěnky.</p>
+            </div>
+            
+            <div class="disclaimer-box">
+                <div class="disclaimer-title">UBYTOVÁNÍ</div>
+                <p>Na ubytování nejsou k dispozici ručníky, ale povlečení tam je.</p>
+            </div>
+            
+            <div class="disclaimer-box">
+                <div class="disclaimer-title">PŘÍJEZD</div>
+                <p>Na Medvědím koleni bude vysílačka. Při příjezdu si zavolejte svatební odvoz přes vysílačku.</p>
+            </div>
+            
             <h2>Svatba na Medvědí boudě</h2>
             <p>Milá rodino a přátelé, vítáme vás na našich svatebních stránkách!</p>
             <br>
@@ -38,19 +78,12 @@
             již v pátek – můžete se třeba vydat na procházku do hor a poté si s námi užít pohodový večer. Odjezd je plánovaný na neděli, ale samozřejmě je jen na vás, kdy dorazíte a jak dlouho s námi zůstanete.</p>
             <br>
             <p>Prozkoumejte webovky a zjistěte podrobnosti o místě konání, programu a dalších důležitých informacích.</p>
-            <br>
-            <p>Abychom zajistili dostatek postelí a jídla pro všechny hosty, prosíme o vyplnění dotazníku.</p>
-        
-                <p>Vyplňte ho prosím co nejdříve, nejpozději však do 30. června 2025. </p>
-                <a href="https://forms.gle/bQaUgAnCqHXQMoT96" class="cta-button" target="_blank" rel="noopener noreferrer">Vyplnit dotazník</a>
-            </div>
         </section>
     </main>
 
     <footer class="main-footer">
         <img src="medvedi.png" alt="Spodní obrázek" class="footer-image">
     </footer>
-<!-- Add before closing body tag -->
     <script src="script.js"></script>
 </body>
 </html>
